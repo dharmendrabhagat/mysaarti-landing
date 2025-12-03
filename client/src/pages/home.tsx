@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import { motion, useScroll, useTransform, useSpring, useMotionValue, useMotionTemplate, Variants } from "framer-motion";
+import { motion, useScroll, useTransform, useSpring, useMotionValue, useMotionTemplate, Variants, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -24,11 +24,6 @@ const staggerContainer: Variants = {
       delayChildren: 0.2
     }
   }
-};
-
-const scaleOnHover: Variants = {
-  initial: { scale: 1 },
-  hover: { scale: 1.05, transition: { duration: 0.3, ease: "easeOut" } }
 };
 
 // --- Components ---
@@ -66,7 +61,37 @@ function SpotlightCard({ children, className = "" }: { children: React.ReactNode
   );
 }
 
-// 2. Animated Background Component
+// 2. Rotating Text Component (Interactive-like content)
+function RotatingText() {
+  const words = ["Get it Fixed.", "Get it Resolved.", "Get it Done."];
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % words.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="h-[1.2em] overflow-hidden inline-block align-bottom min-w-[280px]">
+      <AnimatePresence mode="wait">
+        <motion.span
+          key={index}
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: -50, opacity: 0 }}
+          transition={{ duration: 0.5, ease: "backOut" }}
+          className="block text-transparent bg-clip-text bg-gradient-to-r from-primary via-orange-400 to-yellow-400 animate-gradient-x"
+        >
+          {words[index]}
+        </motion.span>
+      </AnimatePresence>
+    </div>
+  );
+}
+
+// 3. Animated Background Component
 function BackgroundOrbs() {
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none -z-10">
@@ -181,13 +206,13 @@ export default function Home() {
             <motion.div variants={fadeInUp} className="flex flex-wrap gap-3 mb-8">
               <div className="px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-orange-400 text-xs font-bold tracking-wide uppercase backdrop-blur-sm shadow-sm flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
-                Now Live in Mumbai, Maharashtra, India
+                Now Live in Mumbai & Bangalore
               </div>
             </motion.div>
             
             <motion.h1 variants={fadeInUp} className="text-5xl lg:text-7xl font-bold leading-[1.1] text-white mb-8 font-display tracking-tight">
               Don't just complain on WhatsApp. <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-orange-400 to-yellow-400 animate-gradient-x">Get it Fixed.</span> <br />
+              <RotatingText /> <br />
               For Real.
             </motion.h1>
             
@@ -288,7 +313,7 @@ export default function Home() {
                              </div>
                              <div>
                                <h4 className="text-slate-200 font-medium text-sm">Streetlight Fixed</h4>
-                               <p className="text-slate-500 text-xs mt-1">MG Road, Sector 4 • 2 hrs ago</p>
+                               <p className="text-slate-500 text-xs mt-1">MG Road, Bangalore • 2 hrs ago</p>
                              </div>
                           </motion.div>
 
@@ -303,7 +328,7 @@ export default function Home() {
                              </div>
                              <div>
                                <h4 className="text-slate-200 font-medium text-sm">In Progress</h4>
-                               <p className="text-slate-500 text-xs mt-1">Garbage Collection • Estimated 24h</p>
+                               <p className="text-slate-500 text-xs mt-1">Garbage Collection - Dadar East • Estimated 24h</p>
                              </div>
                           </motion.div>
                        </div>
