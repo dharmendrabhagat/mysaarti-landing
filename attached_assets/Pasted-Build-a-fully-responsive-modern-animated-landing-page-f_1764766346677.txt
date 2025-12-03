@@ -1,0 +1,241 @@
+Build a fully responsive, modern, animated landing page for a product called **mysaarti.in**.
+
+### Overall concept
+mysaarti.in is an **Indian citizen-first AI grievance & civic support platform** that helps people raise complaints, auto-file them to authorities, optionally share them on social media, and track them until resolution. The website should look like a **slick startup landing page** with an Indian touch, lots of micro-interactions, and smooth animations.
+
+Use:
+- HTML5
+- Tailwind CSS via CDN (for quick styling)
+- Vanilla JavaScript for animations & interactions
+- Font Awesome (via CDN) for icons
+
+No build tools, no frameworks like React; everything should work as a simple static site.
+
+---
+
+### Branding & Style
+
+**Brand name:** mysaarti.in  
+**Logo style:** Text logo “mysaarti.in” with subtle circular / badge-like accent in saffron & indigo.
+
+**Color Palette (Indian-inspired):**
+- Primary: Saffron (#FF6600)
+- Secondary: Deep Indigo (#0038A8)
+- Accent: India Green (#138808)
+- Background: very light warm grey / off-white
+
+**Typography:**
+- Use a clean, modern Google Font (e.g., "Poppins" or "Inter").
+- Headings bold and striking, body text easy to read.
+
+**Vibe:**
+- Clean, futuristic civic-tech startup.
+- Indian flavor but minimal (no clutter, no heavy patterns).
+- Use subtle gradients and soft shadows.
+
+**Animations & Feel:**
+- Smooth scrolling.
+- Fade-in / slide-in animations on scroll.
+- Hover effects on buttons and cards (scale, shadow, slight color shifts).
+- Animated gradient background elements (using CSS/JS).
+- Use small “gesture-like” animations: icons that bounce slightly, cards that lift on hover.
+
+---
+
+### Layout & Sections
+
+#### 1. Sticky Navbar
+- Left: text logo "mysaarti.in"
+- Right: anchor links:
+  - Home
+  - How It Works
+  - AI Features
+  - Analytics
+  - For Whom
+  - Roadmap
+  - Contact
+- Add a “Download App” button on the right in saffron with pill shape and hover animation.
+- Navbar should be sticky with a subtle blur/glassmorphism effect when scrolling.
+
+---
+
+#### 2. Hero Section (Above the Fold)
+
+Left side:
+- Big headline:
+  > “Raise Complaints. Be Heard. Get Resolution.”
+- Subheadline:
+  > “mysaarti.in is India’s citizen-first AI companion for filing grievances, auto-follow-ups, and civic insights.”
+- Two primary buttons:
+  - “Get Started” (primary, saffron, bold)
+  - “Watch Demo” (outline style)
+- Under the buttons, small badges:
+  - 🇮🇳 “Built for India”
+  - 🤖 “AI Powered”
+  - 🔒 “Privacy Aware”
+
+Right side:
+- A large mockup of a mobile screen (stylized card) showing a sample complaint flow.
+- Behind it, animated floating shapes in saffron/green/indigo (using CSS keyframes).
+- Add a very subtle animated faint map of India or city skyline silhouette in background.
+
+Full-width hero with gradient background (soft saffron to indigo).
+
+---
+
+#### 3. “How It Works” Section
+
+Four horizontal steps with icons (use Font Awesome):
+
+Title: **How mysaarti.in Works**
+
+Each step is a card with icon + heading + description and a hover animation (lift + glow):
+
+1. **Raise**
+   - Icon: fa-microphone or fa-comment-dots
+   - Text: “Speak or type in Indian languages. Add photos or videos of the issue.”
+
+2. **Auto-File**
+   - Icon: fa-paper-plane
+   - Text: “mysaarti.in structures your complaint and files it to the right authorities.”
+
+3. **Boost (Optional)**
+   - Icon: fa-bullhorn
+   - Text: “Share on Twitter/Instagram to increase public visibility and accountability.”
+
+4. **Track & Resolve**
+   - Icon: fa-chart-line
+   - Text: “Track status, follow-ups, and resolution in one unified timeline.”
+
+Use a slight scroll-in animation for each card.
+
+---
+
+#### 4. AI Features Section
+
+Title: **AI-Powered Civic Assistant**
+
+Layout: Two-column (text on left, stylized illustration block on right).
+
+Bullet points with icons:
+- “Smart department detection & routing”
+- “Government-style formal complaint drafting”
+- “Urgency and sentiment scoring”
+- “FAQ and rights suggestions for similar issues”
+- “Pattern spotting for recurring civic problems”
+
+On the right, create a nice card that looks like a chatbot conversation with:
+- A citizen message (simple text)
+- AI’s structured breakdown of the complaint.
+
+Add subtle glow/animation around this card to emphasize “AI magic”.
+
+---
+
+#### 5. Analytics Section
+
+Title: **Civic Insights & Trend Analytics**
+
+Description: Explain that mysaarti.in can generate heatmaps, resolution time charts, and trending issues.
+
+Show **three analytic cards** with mini charts (use simple CSS shapes to fake charts):
+
+- Card 1: “Issue Hotspots” — a mini heatmap-like colored grid.
+- Card 2: “Resolution Performance” — a fake line chart going up.
+- Card 3: “Emerging Issues” — a list of sample tags like “Potholes ↑”, “Water Logging ↑”, “Streetlights ↓”.
+
+Cards should have hover animations and slight staggered scroll-in animations.
+
+---
+
+#### 6. “Who Is It For?” Section
+
+Title: **Built for Every Stakeholder**
+
+Display a responsive grid of persona cards:
+
+- Citizens
+- RWAs & NGOs
+- Journalists
+- Civic Activists
+- Government Departments
+
+Each card:
+- Icon on top (relevant Font Awesome icon)
+- Short line explaining how they benefit.
+- Hover: border color changes, subtle scale-up.
+
+---
+
+#### 7. Roadmap Section
+
+Title: **Roadmap**
+
+Use a horizontal or vertical timeline with milestones:
+
+- Phase 1: “Complaint + Filing MVP”
+- Phase 2: “Social Boost + Follow-Up Engine”
+- Phase 3: “AI Core – Classifier & FAQ”
+- Phase 4: “Analytics Dashboard”
+- Phase 5: “Govt & NGO Partnerships”
+
+Add small circular dots and connecting lines, with a scroll animation.
+
+---
+
+#### 8. Call-to-Action Section
+
+Full-width band with strong background (indigo gradient).
+
+Text:
+> “Ready to be heard?”
+
+Buttons:
+- “Join Early Access”
+- “Download Android App”
+
+Add a soft animated glow behind the buttons.
+
+---
+
+#### 9. Contact / Footer Section
+
+Contact section:
+- Simple form with:
+  - Name
+  - Email
+  - Message / “Tell us your civic challenge”
+- Form should be styled nicely with focus states and micro-animations.
+- This is a front-end only form; no real backend submission needed, but add basic JS validation.
+
+Footer:
+- Logo text: mysaarti.in
+- Links:
+  - Features
+  - Privacy Policy (dummy link)
+  - Terms
+  - Contact
+- Small note: “© {current year} mysaarti.in • Built for India 🇮🇳”
+- Add social icons (Twitter, Instagram, LinkedIn) with hover animations.
+
+---
+
+### Interactivity & Animations (Important)
+
+- Use CSS and JavaScript for:
+  - Scroll-based fade-in / slide-in animations on each section.
+  - Smooth scrolling to sections when clicking navbar links.
+  - Hover effects on buttons, cards, and icons.
+  - Animated background shapes (slow float / pulse).
+- Avoid over-the-top animations; keep it classy yet lively.
+
+---
+
+### Technical Requirements
+
+- Single `index.html` file using TailwindCSS via CDN, Font Awesome via CDN, and inline or separate JS file.
+- All styles should work without additional build steps.
+- Make sure it’s mobile-first and looks great on phones, tablets, and desktops.
+- Organize code cleanly with comments marking each section (Hero, How It Works, etc.).
+
+Create the complete HTML, CSS (via Tailwind classes), and JavaScript in one go so I can run it directly on Replit as a static website.
