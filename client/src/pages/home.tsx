@@ -181,7 +181,7 @@ export default function Home() {
             <motion.div variants={fadeInUp} className="flex flex-wrap gap-3 mb-8">
               <div className="px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-orange-400 text-xs font-bold tracking-wide uppercase backdrop-blur-sm shadow-sm flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
-                Now Live in Bangalore
+                Now Live in Mumbai, Maharashtra, India
               </div>
             </motion.div>
             
@@ -400,7 +400,7 @@ export default function Home() {
               
               <div className="space-y-6">
                  {[
-                   { title: "Smart Routing", desc: "Auto-detects if it's BBMP, BWSSB, or BESCOM." },
+                   { title: "Smart Routing", desc: "Auto-detects if it's BMC, MSEDCL, or BEST." },
                    { title: "Severity Scoring", desc: "Flags urgent issues like open manholes instantly." },
                    { title: "Legal Context", desc: "Cites relevant civic acts to add weight to your complaint." }
                  ].map((feat, i) => (
@@ -445,7 +445,7 @@ export default function Home() {
                       </div>
                       <div className="bg-[#1A1D26] p-4 rounded-lg text-slate-300 border border-white/5 w-full">
                          <span className="text-orange-400 mr-2">$</span>
-                         "The street light outside my house on 12th Main, Indiranagar has been flickering for a week. It's unsafe."
+                         "The street light outside my house on Hill Road, Bandra West has been flickering for a week. It's unsafe."
                       </div>
                    </motion.div>
 
@@ -481,7 +481,7 @@ export default function Home() {
                          <div className="grid grid-cols-2 gap-4 mb-4 text-xs">
                             <div className="bg-black/20 p-2 rounded">
                               <span className="block text-slate-500">Department</span>
-                              <span className="text-white font-semibold">BESCOM (Electrical)</span>
+                              <span className="text-white font-semibold">BEST (Electrical)</span>
                             </div>
                             <div className="bg-black/20 p-2 rounded">
                               <span className="block text-slate-500">Priority</span>
