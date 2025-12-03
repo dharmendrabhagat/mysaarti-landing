@@ -186,13 +186,13 @@ export default function Home() {
             </motion.div>
             
             <motion.h1 variants={fadeInUp} className="text-5xl lg:text-7xl font-bold leading-[1.1] text-white mb-8 font-display tracking-tight">
-              Civic Support <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-orange-400 to-yellow-400 animate-gradient-x">Reimagined</span> <br />
-              for India.
+              Don't just complain on WhatsApp. <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-orange-400 to-yellow-400 animate-gradient-x">Get it Fixed.</span> <br />
+              For Real.
             </motion.h1>
             
             <motion.p variants={fadeInUp} className="text-lg text-slate-400 mb-10 leading-relaxed max-w-lg border-l-2 border-primary/30 pl-6">
-              The citizen-first AI platform that auto-files grievances, tracks resolution, and holds authorities accountable.
+              Stop running between pillars and posts. mysaarti.in is your personal civic assistant that files, fights, and follows up for you.
             </motion.p>
             
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-5">
@@ -352,10 +352,10 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: "fa-microphone", title: "Raise", desc: "Speak in your language. Upload evidence instantly.", color: "text-orange-500", bg: "from-orange-500/20 to-orange-500/5" },
-              { icon: "fa-cogs", title: "Process", desc: "AI structures your complaint & finds the right dept.", color: "text-blue-500", bg: "from-blue-500/20 to-blue-500/5" },
-              { icon: "fa-rocket", title: "Boost", desc: "Auto-tweet to authorities for faster visibility.", color: "text-purple-500", bg: "from-purple-500/20 to-purple-500/5" },
-              { icon: "fa-check-circle", title: "Resolve", desc: "Get real-time updates until the job is done.", color: "text-green-500", bg: "from-green-500/20 to-green-500/5" }
+              { icon: "fa-microphone", title: "Rant", desc: "Just vent in Hindi, Marathi, or English. We'll handle the rest.", color: "text-orange-500", bg: "from-orange-500/20 to-orange-500/5" },
+              { icon: "fa-magic", title: "Refine", desc: "We turn 'Arre yaar' into a formal complaint under the right Act.", color: "text-blue-500", bg: "from-blue-500/20 to-blue-500/5" },
+              { icon: "fa-bullhorn", title: "Roar", desc: "Auto-tweets to Ministers & Commissioners for maximum shaming.", color: "text-purple-500", bg: "from-purple-500/20 to-purple-500/5" },
+              { icon: "fa-check-circle", title: "Resolve", desc: "Get updates on WhatsApp. Finally, some 'Good News'.", color: "text-green-500", bg: "from-green-500/20 to-green-500/5" }
             ].map((step, index) => (
               <motion.div
                 key={index}
@@ -392,7 +392,7 @@ export default function Home() {
                 POWERED BY LLMs
               </div>
               <h2 className="text-4xl lg:text-5xl font-bold mb-8 text-white font-display leading-tight">
-                An AI that speaks <br /> <span className="text-blue-400">Bureaucrat.</span>
+                An AI that speaks <br /> <span className="text-blue-400">"Sarkari" so you don't have to.</span>
               </h2>
               <p className="text-slate-400 mb-10 text-lg leading-relaxed">
                 Filing a complaint requires knowing the right terms, laws, and departments. mysaarti's AI handles that complexity for you in milliseconds.
@@ -445,7 +445,7 @@ export default function Home() {
                       </div>
                       <div className="bg-[#1A1D26] p-4 rounded-lg text-slate-300 border border-white/5 w-full">
                          <span className="text-orange-400 mr-2">$</span>
-                         "The street light outside my house on Hill Road, Bandra West has been flickering for a week. It's unsafe."
+                         "The street light outside my house on Hill Road, Bandra West has been flickering for a week. It's unsafe. Fix it fast."
                       </div>
                    </motion.div>
 
@@ -529,11 +529,11 @@ export default function Home() {
             <SpotlightCard className="p-6 bg-card/50 backdrop-blur-sm">
               <div className="flex justify-between items-start mb-8">
                 <div>
-                   <p className="text-slate-500 text-xs font-bold uppercase tracking-wider mb-1">Total Resolved</p>
-                   <h3 className="text-3xl font-bold text-white">14,203</h3>
+                   <p className="text-slate-500 text-xs font-bold uppercase tracking-wider mb-1">Chai Cups Saved</p>
+                   <h3 className="text-3xl font-bold text-white">45,000+</h3>
                 </div>
                 <div className="p-2 rounded-lg bg-green-500/10 text-green-500">
-                   <i className="fas fa-check-double"></i>
+                   <i className="fas fa-coffee"></i>
                 </div>
               </div>
               {/* CSS Bar Chart */}
@@ -555,8 +555,8 @@ export default function Home() {
              <SpotlightCard className="p-6 bg-card/50 backdrop-blur-sm">
               <div className="flex justify-between items-start mb-8">
                 <div>
-                   <p className="text-slate-500 text-xs font-bold uppercase tracking-wider mb-1">Avg Response Time</p>
-                   <h3 className="text-3xl font-bold text-white">48h <span className="text-sm text-slate-500 font-normal">(-12%)</span></h3>
+                   <p className="text-slate-500 text-xs font-bold uppercase tracking-wider mb-1">Govt Visits Avoided</p>
+                   <h3 className="text-3xl font-bold text-white">12,000</h3>
                 </div>
                 <div className="p-2 rounded-lg bg-blue-500/10 text-blue-500">
                    <i className="fas fa-stopwatch"></i>
@@ -675,7 +675,7 @@ export default function Home() {
             whileInView={{ opacity: 1, scale: 1 }}
             className="text-5xl lg:text-7xl font-bold mb-8 text-white font-display tracking-tight"
           >
-            Ready to <span className="text-primary">Fix It?</span>
+            Ready to make the <br /><span className="text-primary">System Work?</span>
           </motion.h2>
           <p className="text-xl text-slate-300 mb-12 max-w-2xl mx-auto">
             Join thousands of citizens who are taking charge of their neighborhoods today.
